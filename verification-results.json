@@ -1,0 +1,123 @@
+{
+  "verifiedAt": "2026-10-30T05:39:17.619Z",
+  "environment": "Local MongoDB; not Atlas",
+  "database": "banyan_checkpoint2_yixu",
+  "mongodbVersion": "8.0.34",
+  "checks": [
+    "2 users, 3 contacts, 3 favors persisted",
+    "Favor references resolve and owner IDs match",
+    "Owner-filtered query returns no contacts for second demo user",
+    "Invalid email and favor direction rejected by Mongoose",
+    "Duplicate email rejected by MongoDB unique index"
+  ],
+  "users": [
+    {
+      "_id": "6ae41daf5ae15e560b31ef73",
+      "email": "alex.demo@example.com",
+      "__v": 0,
+      "createdAt": "2026-10-30T04:31:43.877Z",
+      "loginEnabled": false,
+      "name": "Alex Demo",
+      "role": "user",
+      "updatedAt": "2026-10-30T05:39:10.000Z"
+    },
+    {
+      "_id": "6ae41daf5ae15e560b31ef74",
+      "email": "jamie.demo@example.com",
+      "__v": 0,
+      "createdAt": "2026-10-30T04:31:43.898Z",
+      "loginEnabled": false,
+      "name": "Jamie Demo",
+      "role": "user",
+      "updatedAt": "2026-10-30T05:39:10.008Z"
+    }
+  ],
+  "contacts": [
+    {
+      "_id": "6ae41daf5ae15e560b31ef77",
+      "name": "Casey Demo",
+      "owner": "6ae41daf5ae15e560b31ef73",
+      "__v": 0,
+      "birthday": "2000-11-02T00:00:00.000Z",
+      "city": "<city>",
+      "createdAt": "2026-10-30T04:31:43.922Z",
+      "lastInteractionAt": "2026-10-20T12:00:00.000Z",
+      "relationship": "colleague",
+      "updatedAt": "2026-10-30T05:39:10.018Z"
+    },
+    {
+      "_id": "6ae41daf5ae15e560b31ef76",
+      "name": "Morgan Demo",
+      "owner": "6ae41daf5ae15e560b31ef73",
+      "__v": 0,
+      "birthday": "1999-09-20T00:00:00.000Z",
+      "city": "<city>",
+      "createdAt": "2026-10-30T04:31:43.918Z",
+      "lastInteractionAt": "2026-10-20T12:00:00.000Z",
+      "relationship": "family",
+      "updatedAt": "2026-10-30T05:39:10.016Z"
+    },
+    {
+      "_id": "6ae41daf5ae15e560b31ef75",
+      "name": "Taylor Demo",
+      "owner": "6ae41daf5ae15e560b31ef73",
+      "__v": 0,
+      "birthday": "2001-05-14T00:00:00.000Z",
+      "city": "<city>",
+      "createdAt": "2026-10-30T04:31:43.910Z",
+      "lastInteractionAt": "2026-10-20T12:00:00.000Z",
+      "relationship": "friend",
+      "updatedAt": "2026-10-30T05:39:10.013Z"
+    }
+  ],
+  "favors": [
+    {
+      "_id": "6ae41daf5ae15e560b31ef78",
+      "contact": {
+        "_id": "6ae41daf5ae15e560b31ef77",
+        "name": "Casey Demo",
+        "city": "<city>"
+      },
+      "note": "Helped review a class assignment.",
+      "owner": "6ae41daf5ae15e560b31ef73",
+      "__v": 0,
+      "createdAt": "2026-10-30T04:31:43.959Z",
+      "direction": "given",
+      "occurredAt": "2026-10-18T00:00:00.000Z",
+      "size": "small",
+      "updatedAt": "2026-10-30T05:39:10.026Z"
+    },
+    {
+      "_id": "6ae41daf5ae15e560b31ef79",
+      "note": "Helped move furniture.",
+      "owner": "6ae41daf5ae15e560b31ef73",
+      "contact": {
+        "_id": "6ae41daf5ae15e560b31ef76",
+        "name": "Morgan Demo",
+        "city": "<city>"
+      },
+      "__v": 0,
+      "createdAt": "2026-10-30T04:31:43.970Z",
+      "direction": "received",
+      "occurredAt": "2026-10-19T00:00:00.000Z",
+      "size": "large",
+      "updatedAt": "2026-10-30T05:39:10.029Z"
+    },
+    {
+      "_id": "6ae41daf5ae15e560b31ef7a",
+      "contact": {
+        "_id": "6ae41daf5ae15e560b31ef75",
+        "name": "Taylor Demo",
+        "city": "<city>"
+      },
+      "note": "Helped prepare a presentation.",
+      "owner": "6ae41daf5ae15e560b31ef73",
+      "__v": 0,
+      "createdAt": "2026-10-30T04:31:43.978Z",
+      "direction": "given",
+      "occurredAt": "2026-10-20T00:00:00.000Z",
+      "size": "medium",
+      "updatedAt": "2026-10-30T05:39:10.031Z"
+    }
+  ]
+}
