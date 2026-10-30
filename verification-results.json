@@ -1,5 +1,5 @@
 {
-  "verifiedAt": "2026-10-30T05:39:17.619Z",
+  "verifiedAt": "2026-10-30T06:20:01.648Z",
   "environment": "Local MongoDB; not Atlas",
   "database": "banyan_checkpoint2_yixu",
   "mongodbVersion": "8.0.34",
@@ -12,112 +12,112 @@
   ],
   "users": [
     {
-      "_id": "6ae41daf5ae15e560b31ef73",
+      "_id": "6ae4370a57353a15547e7ed2",
       "email": "alex.demo@example.com",
       "__v": 0,
-      "createdAt": "2026-10-30T04:31:43.877Z",
+      "createdAt": "2026-10-30T06:19:54.937Z",
       "loginEnabled": false,
       "name": "Alex Demo",
       "role": "user",
-      "updatedAt": "2026-10-30T05:39:10.000Z"
+      "updatedAt": "2026-10-30T06:19:54.937Z"
     },
     {
-      "_id": "6ae41daf5ae15e560b31ef74",
+      "_id": "6ae4370b57353a15547e7ed3",
       "email": "jamie.demo@example.com",
       "__v": 0,
-      "createdAt": "2026-10-30T04:31:43.898Z",
+      "createdAt": "2026-10-30T06:19:55.002Z",
       "loginEnabled": false,
       "name": "Jamie Demo",
       "role": "user",
-      "updatedAt": "2026-10-30T05:39:10.008Z"
+      "updatedAt": "2026-10-30T06:19:55.002Z"
     }
   ],
   "contacts": [
     {
-      "_id": "6ae41daf5ae15e560b31ef77",
+      "_id": "6ae4370b57353a15547e7ed6",
       "name": "Casey Demo",
-      "owner": "6ae41daf5ae15e560b31ef73",
+      "owner": "6ae4370a57353a15547e7ed2",
       "__v": 0,
       "birthday": "2000-11-02T00:00:00.000Z",
       "city": "<city>",
-      "createdAt": "2026-10-30T04:31:43.922Z",
+      "createdAt": "2026-10-30T06:19:55.152Z",
       "lastInteractionAt": "2026-10-20T12:00:00.000Z",
       "relationship": "colleague",
-      "updatedAt": "2026-10-30T05:39:10.018Z"
+      "updatedAt": "2026-10-30T06:19:55.152Z"
     },
     {
-      "_id": "6ae41daf5ae15e560b31ef76",
+      "_id": "6ae4370b57353a15547e7ed5",
       "name": "Morgan Demo",
-      "owner": "6ae41daf5ae15e560b31ef73",
+      "owner": "6ae4370a57353a15547e7ed2",
       "__v": 0,
       "birthday": "1999-09-20T00:00:00.000Z",
       "city": "<city>",
-      "createdAt": "2026-10-30T04:31:43.918Z",
+      "createdAt": "2026-10-30T06:19:55.105Z",
       "lastInteractionAt": "2026-10-20T12:00:00.000Z",
       "relationship": "family",
-      "updatedAt": "2026-10-30T05:39:10.016Z"
+      "updatedAt": "2026-10-30T06:19:55.105Z"
     },
     {
-      "_id": "6ae41daf5ae15e560b31ef75",
+      "_id": "6ae4370b57353a15547e7ed4",
       "name": "Taylor Demo",
-      "owner": "6ae41daf5ae15e560b31ef73",
+      "owner": "6ae4370a57353a15547e7ed2",
       "__v": 0,
       "birthday": "2001-05-14T00:00:00.000Z",
       "city": "<city>",
-      "createdAt": "2026-10-30T04:31:43.910Z",
+      "createdAt": "2026-10-30T06:19:55.055Z",
       "lastInteractionAt": "2026-10-20T12:00:00.000Z",
       "relationship": "friend",
-      "updatedAt": "2026-10-30T05:39:10.013Z"
+      "updatedAt": "2026-10-30T06:19:55.055Z"
     }
   ],
   "favors": [
     {
-      "_id": "6ae41daf5ae15e560b31ef78",
+      "_id": "6ae4370b57353a15547e7ed7",
       "contact": {
-        "_id": "6ae41daf5ae15e560b31ef77",
+        "_id": "6ae4370b57353a15547e7ed6",
         "name": "Casey Demo",
         "city": "<city>"
       },
       "note": "Helped review a class assignment.",
-      "owner": "6ae41daf5ae15e560b31ef73",
+      "owner": "6ae4370a57353a15547e7ed2",
       "__v": 0,
-      "createdAt": "2026-10-30T04:31:43.959Z",
+      "createdAt": "2026-10-30T06:19:55.248Z",
       "direction": "given",
       "occurredAt": "2026-10-18T00:00:00.000Z",
       "size": "small",
-      "updatedAt": "2026-10-30T05:39:10.026Z"
+      "updatedAt": "2026-10-30T06:19:55.248Z"
     },
     {
-      "_id": "6ae41daf5ae15e560b31ef79",
+      "_id": "6ae4370b57353a15547e7ed8",
+      "owner": "6ae4370a57353a15547e7ed2",
       "note": "Helped move furniture.",
-      "owner": "6ae41daf5ae15e560b31ef73",
       "contact": {
-        "_id": "6ae41daf5ae15e560b31ef76",
+        "_id": "6ae4370b57353a15547e7ed5",
         "name": "Morgan Demo",
         "city": "<city>"
       },
       "__v": 0,
-      "createdAt": "2026-10-30T04:31:43.970Z",
+      "createdAt": "2026-10-30T06:19:55.300Z",
       "direction": "received",
       "occurredAt": "2026-10-19T00:00:00.000Z",
       "size": "large",
-      "updatedAt": "2026-10-30T05:39:10.029Z"
+      "updatedAt": "2026-10-30T06:19:55.300Z"
     },
     {
-      "_id": "6ae41daf5ae15e560b31ef7a",
+      "_id": "6ae4370b57353a15547e7ed9",
       "contact": {
-        "_id": "6ae41daf5ae15e560b31ef75",
+        "_id": "6ae4370b57353a15547e7ed4",
         "name": "Taylor Demo",
         "city": "<city>"
       },
       "note": "Helped prepare a presentation.",
-      "owner": "6ae41daf5ae15e560b31ef73",
+      "owner": "6ae4370a57353a15547e7ed2",
       "__v": 0,
-      "createdAt": "2026-10-30T04:31:43.978Z",
+      "createdAt": "2026-10-30T06:19:55.348Z",
       "direction": "given",
       "occurredAt": "2026-10-20T00:00:00.000Z",
       "size": "medium",
-      "updatedAt": "2026-10-30T05:39:10.031Z"
+      "updatedAt": "2026-10-30T06:19:55.348Z"
     }
   ]
 }
