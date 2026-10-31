@@ -2,14 +2,13 @@ require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const connectDB = require('./db');
-const verifyToken = ('./middleware/verifyToken');
-
+const verifyToken = require('./middleware/verifyToken');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-  connectDB()
-    .then(() => console.log('MongoDB connected'))
-    .catch(err => console.error('MongoDB connection failed:', err.message));
+connectDB()
+  .then(conn => console.log(`MongoDB connected: ${conn.host}/${conn.name}`))
+  .catch(err => console.error('MongoDB connection failed:', err.message));
 
 app.use(cors());
 app.use(express.json());
