@@ -2,10 +2,12 @@ const mongoose = require('mongoose');
 const connectDB = require('../db');
 const { User, Contact, Favor } = require('../models');
 
+const DB_NAME = 'banyan_checkpoint2_yixu';
+
 async function seed() {
   await connectDB();
 
-  if (mongoose.connection.name !== 'banyan_checkpoint2_yixu') {
+  if (mongoose.connection.name !== DB_NAME) {
     throw new Error('Seed is restricted to the isolated checkpoint database.');
   }
 
