@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-10-30T06:20:01.648Z",
-  "environment": "Local MongoDB; not Atlas",
+  "verifiedAt": "2026-10-31T01:49:50.561Z",
+  "environment": "MongoDB Atlas",
   "database": "banyan_checkpoint2_yixu",
-  "mongodbVersion": "8.0.34",
+  "mongodbVersion": "8.0.36",
   "checks": [
     "2 users, 3 contacts, 3 favors persisted",
     "Favor references resolve and owner IDs match",
@@ -19,7 +19,7 @@
       "loginEnabled": false,
       "name": "Alex Demo",
       "role": "user",
-      "updatedAt": "2026-10-30T06:19:54.937Z"
+      "updatedAt": "2026-10-31T01:49:44.542Z"
     },
     {
       "_id": "6ae4370b57353a15547e7ed3",
@@ -29,7 +29,7 @@
       "loginEnabled": false,
       "name": "Jamie Demo",
       "role": "user",
-      "updatedAt": "2026-10-30T06:19:55.002Z"
+      "updatedAt": "2026-10-31T01:49:44.647Z"
     }
   ],
   "contacts": [
@@ -43,7 +43,7 @@
       "createdAt": "2026-10-30T06:19:55.152Z",
       "lastInteractionAt": "2026-10-20T12:00:00.000Z",
       "relationship": "colleague",
-      "updatedAt": "2026-10-30T06:19:55.152Z"
+      "updatedAt": "2026-10-31T01:49:44.816Z"
     },
     {
       "_id": "6ae4370b57353a15547e7ed5",
@@ -55,7 +55,7 @@
       "createdAt": "2026-10-30T06:19:55.105Z",
       "lastInteractionAt": "2026-10-20T12:00:00.000Z",
       "relationship": "family",
-      "updatedAt": "2026-10-30T06:19:55.105Z"
+      "updatedAt": "2026-10-31T01:49:44.768Z"
     },
     {
       "_id": "6ae4370b57353a15547e7ed4",
@@ -67,7 +67,7 @@
       "createdAt": "2026-10-30T06:19:55.055Z",
       "lastInteractionAt": "2026-10-20T12:00:00.000Z",
       "relationship": "friend",
-      "updatedAt": "2026-10-30T06:19:55.055Z"
+      "updatedAt": "2026-10-31T01:49:44.715Z"
     }
   ],
   "favors": [
@@ -76,7 +76,7 @@
       "contact": {
         "_id": "6ae4370b57353a15547e7ed6",
         "name": "Casey Demo",
-        "city": "<city>"
+        "city": "Irvine"
       },
       "note": "Helped review a class assignment.",
       "owner": "6ae4370a57353a15547e7ed2",
@@ -85,7 +85,7 @@
       "direction": "given",
       "occurredAt": "2026-10-18T00:00:00.000Z",
       "size": "small",
-      "updatedAt": "2026-10-30T06:19:55.248Z"
+      "updatedAt": "2026-10-31T01:49:44.914Z"
     },
     {
       "_id": "6ae4370b57353a15547e7ed8",
@@ -94,21 +94,21 @@
       "contact": {
         "_id": "6ae4370b57353a15547e7ed5",
         "name": "Morgan Demo",
-        "city": "<city>"
+        "city": "Anaheim"
       },
       "__v": 0,
       "createdAt": "2026-10-30T06:19:55.300Z",
       "direction": "received",
       "occurredAt": "2026-10-19T00:00:00.000Z",
       "size": "large",
-      "updatedAt": "2026-10-30T06:19:55.300Z"
+      "updatedAt": "2026-10-31T01:49:44.967Z"
     },
     {
       "_id": "6ae4370b57353a15547e7ed9",
       "contact": {
         "_id": "6ae4370b57353a15547e7ed4",
         "name": "Taylor Demo",
-        "city": "<city>"
+        "city": "Fullerton"
       },
       "note": "Helped prepare a presentation.",
       "owner": "6ae4370a57353a15547e7ed2",
@@ -117,7 +117,7 @@
       "direction": "given",
       "occurredAt": "2026-10-20T00:00:00.000Z",
       "size": "medium",
-      "updatedAt": "2026-10-30T06:19:55.348Z"
+      "updatedAt": "2026-10-31T01:49:45.047Z"
     }
   ]
 }
