@@ -22,7 +22,7 @@ async function seed() {
     {upsert:true,new:true,runValidators:true}
   );
 
-  for (const [name,relationship,city,birthday] of [['Taylor Demo','friend','<city>','2001-05-14'],['Morgan Demo','family','<city>','1999-09-20'],['Casey Demo','colleague','<city>','2000-11-02']]) {
+  for (const [name,relationship,city,birthday] of [['Taylor Demo','friend','Fullerton','2001-05-14'],['Morgan Demo','family','Anaheim','1999-09-20'],['Casey Demo','colleague','Irvine','2000-11-02']]) {
     await Contact.findOneAndUpdate({owner:owner._id,name}, {$set:{relationship,city,birthday:new Date(birthday),lastInteractionAt:new Date('2026-10-20T12:00:00Z')}}, {upsert:true,new:true,runValidators:true});
   }
 
