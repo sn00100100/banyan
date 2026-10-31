@@ -1,7 +1,6 @@
 // Imports
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
-// const User = require('../models/User');
 const { User } = require('../models');
 
 // Function to check if email is valid
@@ -25,7 +24,7 @@ exports.register = async (req, res) => {
       });
     }
 
-    // Check password length and return message if for inccorrect length
+    // Check password length and return message if for incorrect length
     if (!password || password.length < 6) {
       return res.status(400).json({ message: 'Password must be at least 6 characters' });
     }
@@ -46,7 +45,7 @@ exports.register = async (req, res) => {
   } catch (err) {
     res.status(500).json({ message: 'Server error', error: err.message });
   }
-}
+};
 
 exports.login = async (req, res) => {
   try {
