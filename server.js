@@ -17,6 +17,7 @@ app.use(express.static('public'));
 // Routes go here. Each member adds their own app.use('/api/...') line.
 app.use('/api/auth', require('./routes/authRoutes'));
 app.use('/api/admin', require('./routes/adminRoutes'));
+app.use('/api/users', require('./routes/userRoutes'));
 
 // Protected routes: mount with verifyToken (Member 1's middleware).
 // Uncomment once the route file exists.
