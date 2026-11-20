@@ -17,6 +17,12 @@ exports.updateUserRole = async (req, res) => {
       return res.status(400).json({ message: 'Role must be user or admin' });
     }
 
+    if (req.params.id === req.user.id) {
+      return res.status(400).json({ 
+        message: 'You cannot change your own role.' 
+      });
+    }
+
     const user = await User.findByIdAndUpdate(
       req.params.id,
       { role },
@@ -35,6 +41,13 @@ exports.updateUserRole = async (req, res) => {
 
 exports.deleteUser = async (req, res) => {
   try {
+
+    if (req.params.id === req.user.id) {
+      return res.status(400).json({
+        message: 'You cannot delete your own account'
+      });
+    }
+
     const user = await User.findById(req.params.id);
     if (!user) {
       return res.status(404).json({ message: 'User not found' });
