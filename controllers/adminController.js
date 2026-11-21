@@ -19,7 +19,7 @@ exports.updateUserRole = async (req, res) => {
 
     if (req.params.id === req.user.id) {
       return res.status(400).json({ 
-        message: 'You cannot change your own role.' 
+        message: 'You cannot change your own role' 
       });
     }
 
