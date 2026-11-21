@@ -1,3 +1,4 @@
+// Imports
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
@@ -6,10 +7,12 @@ const verifyToken = require('./middleware/verifyToken');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+// Connect to MongoDB
 connectDB()
   .then(conn => console.log(`MongoDB connected: ${conn.host}/${conn.name}`))
   .catch(err => console.error('MongoDB connection failed:', err.message));
 
+// Middleware
 app.use(cors());
 app.use(express.json());
 app.use(express.static('public'));
@@ -24,4 +27,5 @@ app.use('/api/users', require('./routes/userRoutes'));
 // app.use('/api/contacts', verifyToken, require('./routes/contactRoutes'));
 // app.use('/api/favors', verifyToken, require('./routes/favorRoutes'));
 
+// Start server
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
