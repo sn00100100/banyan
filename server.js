@@ -7,6 +7,12 @@ const verifyToken = require('./middleware/verifyToken');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+// Check that JWT_SECRET is configured
+if (!process.env.JWT_SECRET) {
+  console.error('JWT_SECRET is not set. Add it to .env');
+  process.exit(1);
+}
+
 // Connect to MongoDB
 connectDB()
   .then(conn => console.log(`MongoDB connected: ${conn.host}/${conn.name}`))
