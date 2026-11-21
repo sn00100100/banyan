@@ -19,12 +19,6 @@ app.use('/api/auth', require('./routes/authRoutes'));
 app.use('/api/admin', require('./routes/adminRoutes'));
 app.use('/api/users', require('./routes/userRoutes'));
 
-// TEMP TEST - remove before commit
-const requireOwnership = require('./middleware/requireOwnership');
-const { Contact } = require('./models');
-app.get('/api/_test/contacts/:id', verifyToken, requireOwnership(Contact), (req, res) => res.json(req.resource));
-// END TEMP TEST
-
 // Protected routes: mount with verifyToken (Member 1's middleware).
 // Uncomment once the route file exists.
 // app.use('/api/contacts', verifyToken, require('./routes/contactRoutes'));
