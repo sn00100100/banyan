@@ -5,6 +5,7 @@ async function getEvents(city) {
     apikey: process.env.TICKETMASTER_API_KEY,
     city,
     size: '10',
+    startDateTime: new Date().toISOString().slice(0, 19) + 'Z',
     sort: 'date,asc'
   });
 
