@@ -23,7 +23,7 @@ app.use('/api/admin', require('./routes/adminRoutes'));
 app.use('/api/users', require('./routes/userRoutes'));
 // Protected routes: mount with verifyToken (Member 1's middleware).
 // Uncomment once the route file exists.
-// app.use('/api/contacts', verifyToken, require('./routes/contactRoutes'));
+app.use('/api/contacts', verifyToken, require('./routes/contactRoutes'));
 // app.use('/api/favors', verifyToken, require('./routes/favorRoutes'));
 app.use('/api/holidays', verifyToken, require('./routes/holidayRoutes'));
 app.use('/api/events', verifyToken, require('./routes/eventRoutes'));
